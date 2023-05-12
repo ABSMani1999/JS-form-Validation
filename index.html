@@ -1,0 +1,57 @@
+<html>
+	<head>
+	
+		<title> Form Validation </title>
+		<meta charset "utf-8">
+		<meta name="description" content="Login"/>
+		<meta name="keywords" content="HTML,CSS,Java script"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+		
+		<style>
+		*{ margin:0; padding:0; box-sizing:border-box;	}
+		form{ margin:auto; width:350px; padding:15px; border-radius:10px; text-align:center; border:3px solid #ccc; }
+		h2{ background-color:yellow; }
+		input{ width:100%; border-radius:5px; height:40px; padding:10px; border:2px solid #ccc; }
+		input:focus{ outline:0; border-color:#999; }
+		button{ display:inline-block; border-radius:5px; cursor:pointer; padding:8px; background-color:blue; color:#fff; font-size:16px; }
+		p{ color:red; display:none; }
+		.error-show{ display:block; }
+		</style>
+	</head>
+	
+	<body>
+		<div class="user-form">
+			<form>
+				<h2> Person Details </h2><br>
+			<div>
+				<input type="text" placeholder="Enter your first Name" class="form-name">
+				<p class="error-msg"> Please enter your first name...! </p>
+				<p class="exist"> This fisrt name is Already exist...! </p>
+			</div>
+			<div>
+				<input type="text" placeholder="Enter your last Name" class="form-name">
+				<p class="error-msg"> Please enter your last name...! </p>
+				<p class="exist"> This last name is Already exist...! </p>
+			</div>
+			<div>
+				<input type="text" placeholder="Enter your Gender" id="gender" class="form-name">
+				<p class="error-msg"> Please enter your Gender...! </p>
+				<!-- <p> This  is Already exist...! </p> -->
+			</div>
+			<div>
+				<input type="email" placeholder="Enter your Email" class="form-name">
+				<p class="error-msg"> Please your gmail...! </p>
+				<p class="exist"> This gmail is Already exist...! </p>
+			</div>
+			<div>
+				<input type="number" placeholder="Enter your Mobile no" id="phone-no" class="form-name">
+				<p class="error-msg"> Please your Mobile number...! </p>
+				<p class="error-incorrect"> Please your Mobile number incorrect...!</p>
+				<p class="exist"> This number is Already exist...! </p>
+			</div>
+			<button> Enter </button>
+			</form>
+		</div>
+		<script src="main.js"> </script>
+	</body>
+</html>
